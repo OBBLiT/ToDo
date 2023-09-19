@@ -1,0 +1,253 @@
+html {
+  height: 100%;
+  overflow-y: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  height: 100%;
+  background-image: linear-gradient(135deg, hsl(187, 100%, 79%) 20%, hsl(187, 100%, 30%) 80%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0px;
+  padding: 0px;
+}
+#heading {
+  font-size: 6vmin;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #9df0ff;
+}
+@keyframes pop {
+  0% {
+    opacity: 0%;
+    top: -100vh;
+  }
+  80% {
+    opacity: 100%;
+    top: 60%;
+  }
+  100% {
+    opacity: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+#addTodo {
+  animation: pop 0.8s ease-out;
+}
+#add {
+  background-color: #085f6f;
+  height: 8vmin;
+  width: 8vmin;
+  font-size: 7vmin;
+  font-weight: 800;
+  text-align: center;
+  border: #003038 solid 0.5vmin;
+  border-radius: 2.5vmin;
+  color: #a0f1ff;
+  cursor: pointer;
+}
+#add:hover {
+  background-color: #20889a;
+  transition: 0.2s;
+}
+#add:active {
+  background-color: #99f0ff;
+  color: #005261;
+}
+#closeANT {
+  align-self: flex-end;
+  font-size: 4vmin;
+  font-family: monospace;
+  background-color: #003038;
+  color: #adf3ff;
+  width: 5vmin;
+  height: 5vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: #9df0ff solid 0.4vmin;
+  border-radius: 2vmin;
+  cursor: pointer;
+  user-select: none;
+  margin-top: 0.5vmin;
+  margin-right: 0.5vmin;
+}
+#closeANT:hover {
+  background-color: #085f6f;
+  transition: 0.3s;
+}
+#closeANT:active {
+  background-color: #adf3ff;
+  color: #003038;
+  transition: 0.2s;
+  border-color: #003038;
+}
+#ANTHeading {
+  font-size: 5vmin;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #003038;
+}
+#categoriesHeading {
+  background-color: #009cb8;
+  color: #00252c;
+  border-top-right-radius: 2.2vmin;
+}
+#categoriesHeading:hover {
+  background-color: #3dbfd6;
+}
+.tabItem {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #003038;
+}
+.tabItem:hover {
+  background-color: #3dbfd6;
+  border-top-right-radius: 2.2vmin;
+  transition: 0.2s;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
+}
+.tabItem:active {
+  background-color: #005a69;
+  transition: 0.1s;
+  color: #a0f1ff;
+}
+.catItems {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3vmin;
+  font-weight: 500;
+}
+.catItems:hover {
+  background-color: #adf3ff;
+}
+.catItems:active {
+  background-color: #003038;
+  color: #b4f4ff;
+}
+#cardContainer {
+  display: flex;
+  gap: 5vmin;
+  flex-wrap: wrap;
+  height: 85vh;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  justify-content: space-between;
+  height: 20vmin;
+  min-width: 40vmin;
+  overflow: hidden;
+  background-image: linear-gradient(135deg, hsl(159, 100%, 79%) 10%, hsl(159, 100%, 59%) 90%);
+  border: solid 0.5vmin hsl(159, 100%, 29%);
+  border-radius: 2vmin;
+  padding: 2vmin;
+  width: 40vmin;
+  gap: 3vmin;
+  cursor: pointer;
+}
+.card:hover {
+  background-color: hsl(187, 66%, 50%);
+  background-image: none;
+  transition: 0.5s;
+  border-color: hsl(187, 84%, 29%);
+}
+.card:active {
+  background-color: hsl(187, 66%, 70%);
+  transition: 0.1s;
+}
+.detail1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1vmin;
+  width: 40vmin;
+}
+.title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.detail1-1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 2vmin;
+}
+.detail1-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.detail2 {
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+.time {
+  font-size: 2vmin;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: hsl(180, 100%, 25%);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+input {
+  height: 6vmin;
+  width: 30vw;
+  background-color: #aef3ff;
+  border: #00252c solid 0.5vmin;
+  border-radius: 1vmin;
+  color: #00252c;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 3vmin;
+}
+select {
+  background-color: #aef3ff;
+  border: #00252c solid 0.5vmin;
+  font-size: 2.3vmin;
+  font-weight: 600;
+  border-radius: 1vmin;
+  height: 6vmin;
+  width: 10vw;
+  text-align: center;
+  color: #00252c;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+select:hover {
+  background-color: #3dbfd6;
+}
+textarea {
+  height: 20vmin;
+  width: 30vw;
+  background-color: #aef3ff;
+  border: #00252c solid 0.5vmin;
+  border-radius: 1vmin;
+  color: #00252c;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 3vmin;
+}
+button {
+  height: 6vmin;
+  width: 7vw;
+  background-color: #aef3ff;
+  border: #00252c solid 0.3vmin;
+  border-radius: 1vmin;
+  color: #00252c;
+  font-size: 2.4vmin;
+  font-weight: 600;
+}
+button:hover {
+  background-color: #3dbfd6;
+}
+button:active {
+  background-color: #003038;
+  color: #adf3ff;
+  border-color: #adf3ff;
+}
+#catLab {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 3vmin;
+  font-weight: 800;
+  margin-right: 3vmin;
+}
