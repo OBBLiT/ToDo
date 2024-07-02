@@ -1,7 +1,7 @@
 # ToDo
 A ToDo web app using react
 ## Preview the page
-[preview](https://my-2-do-app.netlify.app/)
+[preview](https://to-do-a-p-p.netlify.app/)
 ## Some ScrenShots of the App
 <img src="https://github.com/OBBLiT/ToDo/blob/main/static/1.png"/>
 <img src="https://github.com/OBBLiT/ToDo/blob/main/static/2.png"/>
